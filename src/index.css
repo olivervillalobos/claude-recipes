@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  /* 🎨 Background */
+  --color-nav-natural-white: #FDFCF9;
+  /* 🎨 Background */
+  --color-background-natural-offwhite: #f9f8f4;
+  /* 🖋️ Text Colors */
+  --color-text-primary: #2E2E2E;       /* Main Text - Dark Charcoal */
+  --color-text-secondary: #5A5A5A;     /* Soft Gray */
+  --color-text-heading: #1C3A2D;       /* Deep Forest */
+  --color-link-hover: #78866B;         /* Olive Green */
+  /* 🌿 Accent Colors */
+  --color-accent-primary: #E86A33;     /* Rustic Orange */
+  --color-accent-secondary: #B5C7B8;   /* Sage Green */
+  --color-button-hover: #D95E40;       /* Burnt Coral */
+  --color-border-subtle: #DDD6CF;      /* Muted Clay */
+  /* 🔤 Font Families */
+  --font-title: 'Roboto Flex', sans-serif;        /* For site title in nav */
+  --font-heading: 'Work Sans', sans-serif;        /* For h1, h2 */
+  --font-body: 'Inter', sans-serif;               /* For p, ul, li, span */
+  --font-link: 'Inter', sans-serif;               /* For a */
+  --font-button: 'Work Sans', sans-serif;         /* For button */
+  --font-highlight: 'Playfair Display', serif;    /* Optional: for decorative span or emphasis */
+}
+.header-container{
+  background-color: var(--color-nav-natural-white);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+.nav-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 20px;
+}
+.nav-icon{
+  height: 100%;
+}
+.nav-title{
+  font-family: var(--font-title);
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+body{
+  background-color: var(--color-background-natural-offwhite);
+}
+.main-container{
+  padding: 30px 30px 10px;
+}
+.form-addIngredient{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  height: 38px;
+}
+.form-input{
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  border-color: var(--color-border-subtle);
+  border-radius: 3px;
+  border-width: 1px;
+  padding: 9px 13px;
+  box-shadow: 0px 1px 2px 0px var(--color-text-secondary);
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 400px;
+}
+.form-button{
+  background-color: var(--color-accent-primary);
+  color: var(--color-background-natural-offwhite);
+  font-family: var(--font-button);
+  border-radius: 3px;
+  border: none;
+  width: 150px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.form-button:hover{
+  outline-style: groove;
+  outline-color: var(--color-accent-secondary);
+}
+.form-button:active{
+  background-color: var(--color-accent-secondary);
+  color: var(--color-text-secondary);
+}
+.form-button::before{
+  content: "+";
+  margin-right: 5px;
+}
